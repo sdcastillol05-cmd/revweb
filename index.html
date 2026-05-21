@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RevWeb — Diseño Web que Convierte</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <img src="logo1.png" alt="RevWeb" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="btn btn--sm">Empezar</a>
+      <button class="nav__burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="btn">Empezar</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge reveal">
+        <span class="dot"></span> Diseño web profesional
+      </div>
+      <h1 class="hero__title reveal">
+        Tu página web,<br />
+        <span class="gradient-text">construida para crecer.</span>
+      </h1>
+      <p class="hero__sub reveal">
+        Creamos sitios desde cero o rediseñamos el tuyo.<br />
+        Rápidos, bonitos y que convierten visitas en clientes.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#servicios" class="btn btn--lg">Ver servicios</a>
+        <a href="#contacto" class="btn btn--ghost btn--lg">Hablemos →</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="statsbar">
+    <div class="statsbar__inner">
+      <div class="stat reveal-stat">
+        <span class="stat__num" data-target="120">0</span><span class="stat__plus">+</span>
+        <span class="stat__label">Proyectos</span>
+      </div>
+      <div class="stat__divider"></div>
+      <div class="stat reveal-stat">
+        <span class="stat__num" data-target="98">0</span><span class="stat__plus">%</span>
+        <span class="stat__label">Clientes satisfechos</span>
+      </div>
+      <div class="stat__divider"></div>
+      <div class="stat reveal-stat">
+        <span class="stat__num" data-target="5">0</span><span class="stat__plus">x</span>
+        <span class="stat__label">Más conversiones</span>
+      </div>
+      <div class="stat__divider"></div>
+      <div class="stat reveal-stat">
+        <span class="stat__num" data-target="3">0</span><span class="stat__plus"> días</span>
+        <span class="stat__label">Entrega inicial</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="eyebrow">¿Qué hacemos?</span>
+        <h2>Dos servicios,<br /><span class="gradient-text">un objetivo.</span></h2>
+      </div>
+      <div class="cards">
+
+        <div class="card card--design reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" stroke="url(#g1)" stroke-width="2.5"/><path d="M16 32 L24 16 L32 32" stroke="url(#g1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.5 26h11" stroke="url(#g1)" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="g1" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="#3B9EFF"/><stop offset="1" stop-color="#00E5A0"/></linearGradient></defs></svg>
+          </div>
+          <span class="card__tag">Desde cero</span>
+          <h3>Diseño Web Nuevo</h3>
+          <p>No tienes página o la tuya es una vergüenza. Te construimos una desde cero: diseño único, código limpio, lista para escalar.</p>
+          <ul class="card__list">
+            <li>Diseño 100% personalizado</li>
+            <li>Optimizada para móvil y desktop</li>
+            <li>SEO básico incluido</li>
+            <li>Velocidad de carga alta</li>
+          </ul>
+          <a href="#contacto" class="card__cta">Quiero una nueva →</a>
+        </div>
+
+        <div class="card card--redesign reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="url(#g2)" stroke-width="2.5"/><path d="M16 24 C16 19.6 19.6 16 24 16" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round"/><path d="M32 24 C32 28.4 28.4 32 24 32" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round"/><path d="M21 13l3 3-3 3" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 35l-3-3 3-3" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="g2" x1="6" y1="6" x2="42" y2="42" gradientUnits="userSpaceOnUse"><stop stop-color="#3B9EFF"/><stop offset="1" stop-color="#00E5A0"/></linearGradient></defs></svg>
+          </div>
+          <span class="card__tag card__tag--green">Rediseño</span>
+          <h3>Renovación Web</h3>
+          <p>Ya tienes web pero no está funcionando. La analizamos, identificamos los problemas y la transformamos sin perder tu identidad.</p>
+          <ul class="card__list">
+            <li>Auditoría de diseño y UX</li>
+            <li>Rediseño visual completo</li>
+            <li>Migración sin pérdida de datos</li>
+            <li>Mejora de velocidad y conversión</li>
+          </ul>
+          <a href="#contacto" class="card__cta">Rediseñar la mía →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section section--dark" id="proceso">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="eyebrow eyebrow--light">¿Cómo lo hacemos?</span>
+        <h2 class="text-white">Simple.<br /><span class="gradient-text">Sin vueltas.</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__num">01</div>
+          <h4>Hablamos</h4>
+          <p>Nos cuentas tu proyecto, tu público y tus objetivos. Sin formularios eternos.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step reveal">
+          <div class="step__num">02</div>
+          <h4>Diseñamos</h4>
+          <p>En 3 días tienes un primer concepto visual para aprobar o ajustar.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step reveal">
+          <div class="step__num">03</div>
+          <h4>Desarrollamos</h4>
+          <p>Llevamos el diseño a código real. Rápido, limpio y listo para escalar.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step reveal">
+          <div class="step__num">04</div>
+          <h4>Lanzamos</h4>
+          <p>Tu web sale al aire. Tú te quedas con el control total.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACTO -->
+  <section class="section cta-section" id="contacto">
+    <div class="cta-orb cta-orb--1"></div>
+    <div class="cta-orb cta-orb--2"></div>
+    <div class="container">
+      <div class="cta__inner reveal">
+        <span class="eyebrow">¿Listo?</span>
+        <h2>Empieza hoy.<br /><span class="gradient-text">Sin compromiso.</span></h2>
+        <p>Cuéntanos tu proyecto y te respondemos en menos de 24 horas.</p>
+        <form class="cta-form" id="ctaForm">
+          <div class="form-row">
+            <input type="text" placeholder="Tu nombre" required />
+            <input type="email" placeholder="Tu email" required />
+          </div>
+          <textarea placeholder="¿Qué necesitas? (nueva web, rediseño, dudas...)" rows="4" required></textarea>
+          <button type="submit" class="btn btn--lg btn--full">Enviar mensaje →</button>
+        </form>
+        <p class="cta__note">Sin spam. Sin ventas agresivas. Solo diseño.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="logo1.png" alt="RevWeb" class="footer__logo" />
+        <p>Diseño web que convierte.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <p class="footer__copy">© 2025 RevWeb. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
